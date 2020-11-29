@@ -10,14 +10,14 @@ pipeline {
     }
     stage('GitHub Jenkins Ant Docker Build') {
       steps {
-        git 'https://github.com/learn-devops-fast/rps-ant.git'
+        git 'https://github.com/learn-devops-fast/rock-paper-scissors.git'
         sh 'mvn compile test install'
       }
     }
 	
 	stage('With the Jenkins Maven plugin') {
       steps {
-        git 'https://github.com/learn-devops-fast/rps-ant.git'
+        git 'https://github.com/learn-devops-fast/rock-paper-scissors.git'
 	withMaven(maven: 'maven-latest') {
           sh 'mvn compile test install'
         }
