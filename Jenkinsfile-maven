@@ -1,0 +1,28 @@
+pipeline {
+  agent any
+  stages {
+    stage('Log Jenkins Ant Docker Git and Java version info') {
+      steps {
+        sh 'mvn -version'
+		sh 'java -version'
+		sh 'docker --version'
+		sh 'git --version'
+      }
+    }
+    stage('GitHub Jenkins Ant Docker Build') {
+      steps {
+        git 'https://github.com/learn-devops-fast/rps-ant.git'
+        sh 'mvn compile test install'
+      }
+    }
+	
+	stage('With the Jenkins Maven plugin') {
+      steps {
+        git 'https://github.com/learn-devops-fast/rps-ant.git'
+		withMaven(maven: 'maven-latest') {
+          sh 'mvn compile test install'
+        }
+      }
+    }
+  }
+}
