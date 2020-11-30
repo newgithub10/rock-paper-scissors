@@ -1,1 +1,46 @@
 mvn clean install findbugs:findbugs checkstyle:checkstyle pmd:pmd
+
+Chapter 1
+
+Read section 1 and lets talk about it
+
+Why does the book start by talking about Agile and XP development methodologies?
+
+Can you describe why continuous integration is necessary?
+
+Can you differentiate between CI/CD and CD
+
+What is an artifact?
+
+Does an artifact have any significance in terms of CI?
+
+Does an artifact have any significance in terms of CD?
+
+
+Chapter 2
+
+What language is Jekins written in?
+
+Jenkins is distributed/downloaded as what type of artifact?
+
+Where is the Jenkins home folder on your VM image?
+
+How can you stop and start Jenkins if it misbehaves?
+
+What is the username and password to log into your local instance?
+
+What plugins are installed by default?
+
+What is the minimum requirement for installing Jenkins?
+
+What source code management plugin is installed by default?
+
+Which Java build tool plugins are installed by default?
+
+What's the easiest way to view and configure Jenkins logs?
+
+What three types of Jenkins jobs can you create by default?
+
+You have multiple versions of the JDK installed. How do you tell Jenkins about this? How does Jenkins know which one to use?
+
+Why is the mascot for Jenkins a butler?
