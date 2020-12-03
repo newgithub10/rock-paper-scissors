@@ -1,7 +1,7 @@
 mvn clean install findbugs:findbugs checkstyle:checkstyle pmd:pmd
 
 stuff.
-
+ 
 Chapter 1
 
 Read section 1 and lets talk about it
