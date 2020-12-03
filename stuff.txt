@@ -5,7 +5,7 @@ stuff.
 Chapter 1
 
 Read section 1 and lets talk about it
-
+ 
 Why does the book start by talking about Agile and XP development methodologies?
 
 Can you describe why continuous integration is necessary?
