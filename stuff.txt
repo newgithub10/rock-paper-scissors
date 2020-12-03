@@ -6,7 +6,7 @@ Chapter 1
   
  
 Why does the book start by talking about Agile and XP development methodologies? 
-
+ 
 Can you describe why continuous integration is necessary?
 
 Can you differentiate between CI/CD and CD
