@@ -8,16 +8,15 @@ pipeline {
 		sh 'git --version'
       }
     }
+    
     stage('GitHub Jenkins Maven Docker Build') {
       steps {
-        git 'https://github.com/learn-devops-fast/rock-paper-scissors.git'
         sh 'mvn compile test install'
       }
     }
-	
-	stage('Build with Jenkins Maven plugin') {
+    
+    stage('Build with Jenkins Maven plugin') {
       steps {
-        git 'https://github.com/learn-devops-fast/rock-paper-scissors.git'
 	withMaven(maven: 'maven-latest') {
           sh 'mvn compile test install'
         }
