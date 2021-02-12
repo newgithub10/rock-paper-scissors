@@ -6,9 +6,9 @@ sudo service jenkins stop
 sudo service nginx stop
 
 #Java
-#sudo add-apt-repository ppa:webupd8team/java
-#sudo apt update
-#sudo apt install oracle-java8-installer -y
+sudo add-apt-repository ppa:webupd8team/java
+sudo apt update
+sudo apt install oracle-java8-installer -y
 
 #Git and Maven
 sudo apt update
